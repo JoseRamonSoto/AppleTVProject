@@ -11,6 +11,8 @@
 		3FFBB8041E2DC88A0072300A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBB8031E2DC88A0072300A /* ViewController.swift */; };
 		3FFBB8071E2DC88A0072300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBB8051E2DC88A0072300A /* Main.storyboard */; };
 		3FFBB8091E2DC88A0072300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBB8081E2DC88A0072300A /* Assets.xcassets */; };
+		3FFBB8111E2DCD9B0072300A /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBB8101E2DCD9B0072300A /* circle.png */; };
+		3FFBB8131E2DD9510072300A /* FocusEngineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBB8121E2DD9500072300A /* FocusEngineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		3FFBB8061E2DC88A0072300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FFBB8081E2DC88A0072300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FFBB80A1E2DC88A0072300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFBB8101E2DCD9B0072300A /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		3FFBB8121E2DD9500072300A /* FocusEngineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusEngineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 				3FFBB8011E2DC88A0072300A /* AppDelegate.swift */,
 				3FFBB8031E2DC88A0072300A /* ViewController.swift */,
 				3FFBB8051E2DC88A0072300A /* Main.storyboard */,
+				3FFBB8121E2DD9500072300A /* FocusEngineViewController.swift */,
 				3FFBB8081E2DC88A0072300A /* Assets.xcassets */,
+				3FFBB8101E2DCD9B0072300A /* circle.png */,
 				3FFBB80A1E2DC88A0072300A /* Info.plist */,
 			);
 			path = AppleTVKit;
@@ -121,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFBB8111E2DCD9B0072300A /* circle.png in Resources */,
 				3FFBB8091E2DC88A0072300A /* Assets.xcassets in Resources */,
 				3FFBB8071E2DC88A0072300A /* Main.storyboard in Resources */,
 			);
@@ -135,6 +142,7 @@
 			files = (
 				3FFBB8041E2DC88A0072300A /* ViewController.swift in Sources */,
 				3FFBB8021E2DC88A0072300A /* AppDelegate.swift in Sources */,
+				3FFBB8131E2DD9510072300A /* FocusEngineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
