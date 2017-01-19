@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON 2.swift"; sourceTree = "<group>"; };
+		3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwiftyJSON 2.swift"; path = "../SwiftyJSON 2.swift"; sourceTree = "<group>"; };
 		3F71D86F1E2FC3E900A49E9A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
 		3FFBB7FE1E2DC88A0072300A /* AppleTVKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFBB8011E2DC88A0072300A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +44,6 @@
 			children = (
 				3FFBB8001E2DC88A0072300A /* AppleTVKit */,
 				3FFBB7FF1E2DC88A0072300A /* Products */,
-				3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +61,7 @@
 				3FFBB8011E2DC88A0072300A /* AppDelegate.swift */,
 				3FFBB8031E2DC88A0072300A /* ViewController.swift */,
 				3F71D86F1E2FC3E900A49E9A /* WeatherViewController.swift */,
+				3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */,
 				3FFBB8051E2DC88A0072300A /* Main.storyboard */,
 				3FFBB8081E2DC88A0072300A /* Assets.xcassets */,
 				3FFBB8101E2DCD9B0072300A /* circle.png */,

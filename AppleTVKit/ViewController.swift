@@ -24,7 +24,8 @@ class ViewController: UIViewController
         self.view.addGestureRecognizer(tappedRecognizer)
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
