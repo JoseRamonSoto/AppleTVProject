@@ -36,7 +36,9 @@ class WeatherViewController: UIViewController
     }
     
     func parse(json: JSON)
-    
+    {
+        
+    }
 
 }
 //newDict!["currently"], ["temperature"]
