@@ -10,10 +10,7 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    let  results: [String] = ["Java", "Swift", "C#", "Python", "C++", "Ruby", "Objective-C", "Ask Later"]
-    
-    @IBOutlet weak var labelResult: UILabel!
-
+ 
     override func viewDidLoad()
     {
         super.viewDidLoad()
