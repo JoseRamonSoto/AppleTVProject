@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3F6D5AD81E30F1B000EA70DF /* SwiftyJSON 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */; };
+		3F6D5ADA1E3132D100EA70DF /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D5AD91E3132D100EA70DF /* MoviesViewController.swift */; };
+		3F6D5ADC1E31383D00EA70DF /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D5ADB1E31383D00EA70DF /* TVViewController.swift */; };
+		3F6D5ADE1E3138E300EA70DF /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D5ADD1E3138E300EA70DF /* FeaturedCollectionViewCell.swift */; };
+		3F6D5AE01E313A8300EA70DF /* StandardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D5ADF1E313A8300EA70DF /* StandardCollectionViewCell.swift */; };
+		3F6D5AE21E313AB900EA70DF /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D5AE11E313AB900EA70DF /* PlayerViewController.swift */; };
+		3F6D5AE41E313B7900EA70DF /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D5AE31E313B7900EA70DF /* Images */; };
 		3F71D8701E2FC3E900A49E9A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71D86F1E2FC3E900A49E9A /* WeatherViewController.swift */; };
 		3FFBB8021E2DC88A0072300A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBB8011E2DC88A0072300A /* AppDelegate.swift */; };
-		3FFBB8041E2DC88A0072300A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBB8031E2DC88A0072300A /* ViewController.swift */; };
 		3FFBB8071E2DC88A0072300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBB8051E2DC88A0072300A /* Main.storyboard */; };
 		3FFBB8091E2DC88A0072300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBB8081E2DC88A0072300A /* Assets.xcassets */; };
 		3FFBB8111E2DCD9B0072300A /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBB8101E2DCD9B0072300A /* circle.png */; };
@@ -18,10 +23,15 @@
 
 /* Begin PBXFileReference section */
 		3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwiftyJSON 2.swift"; path = "../SwiftyJSON 2.swift"; sourceTree = "<group>"; };
+		3F6D5AD91E3132D100EA70DF /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		3F6D5ADB1E31383D00EA70DF /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
+		3F6D5ADD1E3138E300EA70DF /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F6D5ADF1E313A8300EA70DF /* StandardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F6D5AE11E313AB900EA70DF /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		3F6D5AE31E313B7900EA70DF /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		3F71D86F1E2FC3E900A49E9A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
 		3FFBB7FE1E2DC88A0072300A /* AppleTVKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFBB8011E2DC88A0072300A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FFBB8031E2DC88A0072300A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FFBB8061E2DC88A0072300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FFBB8081E2DC88A0072300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FFBB80A1E2DC88A0072300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,12 +68,17 @@
 		3FFBB8001E2DC88A0072300A /* AppleTVKit */ = {
 			isa = PBXGroup;
 			children = (
+				3F6D5AD91E3132D100EA70DF /* MoviesViewController.swift */,
+				3F6D5ADD1E3138E300EA70DF /* FeaturedCollectionViewCell.swift */,
+				3F6D5ADF1E313A8300EA70DF /* StandardCollectionViewCell.swift */,
+				3F6D5AE11E313AB900EA70DF /* PlayerViewController.swift */,
+				3F6D5ADB1E31383D00EA70DF /* TVViewController.swift */,
 				3FFBB8011E2DC88A0072300A /* AppDelegate.swift */,
-				3FFBB8031E2DC88A0072300A /* ViewController.swift */,
 				3F71D86F1E2FC3E900A49E9A /* WeatherViewController.swift */,
 				3F6D5AD71E30F1B000EA70DF /* SwiftyJSON 2.swift */,
 				3FFBB8051E2DC88A0072300A /* Main.storyboard */,
 				3FFBB8081E2DC88A0072300A /* Assets.xcassets */,
+				3F6D5AE31E313B7900EA70DF /* Images */,
 				3FFBB8101E2DCD9B0072300A /* circle.png */,
 				3FFBB80A1E2DC88A0072300A /* Info.plist */,
 			);
@@ -130,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6D5AE41E313B7900EA70DF /* Images in Resources */,
 				3FFBB8111E2DCD9B0072300A /* circle.png in Resources */,
 				3FFBB8091E2DC88A0072300A /* Assets.xcassets in Resources */,
 				3FFBB8071E2DC88A0072300A /* Main.storyboard in Resources */,
@@ -144,9 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F71D8701E2FC3E900A49E9A /* WeatherViewController.swift in Sources */,
-				3FFBB8041E2DC88A0072300A /* ViewController.swift in Sources */,
+				3F6D5AE21E313AB900EA70DF /* PlayerViewController.swift in Sources */,
 				3FFBB8021E2DC88A0072300A /* AppDelegate.swift in Sources */,
+				3F6D5ADE1E3138E300EA70DF /* FeaturedCollectionViewCell.swift in Sources */,
+				3F6D5AE01E313A8300EA70DF /* StandardCollectionViewCell.swift in Sources */,
+				3F6D5ADC1E31383D00EA70DF /* TVViewController.swift in Sources */,
 				3F6D5AD81E30F1B000EA70DF /* SwiftyJSON 2.swift in Sources */,
+				3F6D5ADA1E3132D100EA70DF /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
