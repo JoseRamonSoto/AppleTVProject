@@ -19,7 +19,8 @@ class TVViewController: UIViewController, UICollectionViewDelegateFlowLayout, UI
     let reuseIdentifierFeatured = "FeaturedCell"
     let reuseIdentifierStandard = "StandardCell"
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
     }
     
@@ -29,21 +30,25 @@ class TVViewController: UIViewController, UICollectionViewDelegateFlowLayout, UI
     
     // Collection View Methods
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
+    {
         return 50
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
         return 50
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
+                        insetForSectionAt section: Int) -> UIEdgeInsets
+    {
         return UIEdgeInsets(top: 0.0, left: 50.0, bottom: 0.0, right: 50.0)
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
         return 1
     }
     

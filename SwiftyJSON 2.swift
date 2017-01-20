@@ -38,7 +38,8 @@ public let ErrorInvalidJSON: Int = 490
  JSON's type definitions.
  See http://www.json.org
  */
-public enum Type :Int{
+public enum Type :Int
+{
     
     case number
     case string
@@ -50,7 +51,8 @@ public enum Type :Int{
 }
 
 // MARK: - JSON Base
-public struct JSON {
+public struct JSON
+{
     
     /**
      Creates a JSON using the data.
@@ -60,11 +62,14 @@ public struct JSON {
      - returns: The created JSON
      */
     public init(data:Data, options opt: JSONSerialization.ReadingOptions = .allowFragments, error: NSErrorPointer = nil) {
-        do {
+        do
+        {
             let object: Any = try JSONSerialization.jsonObject(with: data, options: opt)
             self.init(object)
-        } catch let aError as NSError {
-            if error != nil {
+        } catch let aError as NSError
+        {
+            if error != nil
+            {
                 error?.pointee = aError
             }
             self.init(NSNull())
@@ -76,7 +81,8 @@ public struct JSON {
      - parameter string: Normal json string like '{"a":"b"}'
      - returns: The created JSON
      */
-    public static func parse(_ string:String) -> JSON {
+    public static func parse(_ string:String) -> JSON
+    {
         return string.data(using: String.Encoding.utf8)
             .flatMap{ JSON(data: $0) } ?? JSON(NSNull())
     }
@@ -86,7 +92,8 @@ public struct JSON {
      - parameter object:  The object must have the following properties: All objects are NSString/String, NSNumber/Int/Float/Double/Bool, NSArray/Array, NSDictionary/Dictionary, or NSNull; All dictionary keys are NSStrings/String; NSNumbers are not NaN or infinity.
      - returns: The created JSON
      */
-    public init(_ object: Any) {
+    public init(_ object: Any)
+    {
         self.object = object
     }
     
@@ -95,7 +102,8 @@ public struct JSON {
      - parameter jsonArray: A Swift array of JSON objects
      - returns: The created JSON
      */
-    public init(_ jsonArray:[JSON]) {
+    public init(_ jsonArray:[JSON])
+    {
         self.init(jsonArray.map { $0.object })
     }
     
@@ -104,9 +112,11 @@ public struct JSON {
      - parameter jsonDictionary: A Swift dictionary of JSON objects
      - returns: The created JSON
      */
-    public init(_ jsonDictionary:[String: JSON]) {
+    public init(_ jsonDictionary:[String: JSON])
+    {
         var dictionary = [String: Any](minimumCapacity: jsonDictionary.count)
-        for (key, json) in jsonDictionary {
+        for (key, json) in jsonDictionary
+        {
             dictionary[key] = json.object
         }
         self.init(dictionary)
@@ -125,9 +135,11 @@ public struct JSON {
     fileprivate var _error: NSError? = nil
     
     /// Object in JSON
-    public var object: Any {
-        get {
-            switch self.type {
+    public var object: Any{
+        get
+        {
+            switch self.type
+            {
             case .array:
                 return self.rawArray
             case .dictionary:
@@ -144,12 +156,15 @@ public struct JSON {
         }
         set {
             _error = nil
-            switch newValue {
+            switch newValue
+            {
             case let number as NSNumber:
-                if number.isBool {
+                if number.isBool
+                {
                     _type = .bool
                     self.rawBool = number.boolValue
-                } else {
+                } else
+                {
                     _type = .number
                     self.rawNumber = number
                 }

@@ -21,16 +21,17 @@ class WeatherViewController: UIViewController
         {
             if let data = try? Data(contentsOf: url)
             {
+                let json = JSON(data: data)
                 do
                 {
                     let parsed = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
                     
-                    var newDict = parsed as? NSDictionary
-                    print(newDict!["currently"], ["summary"])
+                    let newDict = parsed as? NSDictionary
+                    print(newDict!["currently"]!, ["summary"])
                     
                     self.currentTemperature.text = "\(summary)"
                     self.summary.text = "\(currentTemperature)"
-                    
+                    parse(json: json)
                 }
                 catch let error as NSError
                 {
@@ -44,10 +45,13 @@ class WeatherViewController: UIViewController
     {
         for data in json["data"].arrayValue
         {
-            
+            let time = data["time"].intValue
+            let summary = data["summary"].stringValue
+            let icon = data["icon"].stringValue
+            let temperature = data["temperature"].intValue
+            let apparentTemperature = data["apparentTemperature"].intValue
         }
 
     }
 
 }
-//newDict!["currently"], ["temperature"]

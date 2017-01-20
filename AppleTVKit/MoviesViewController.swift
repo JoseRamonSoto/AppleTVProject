@@ -19,7 +19,8 @@ class MoviesViewController: UIViewController, UICollectionViewDelegateFlowLayout
     let reuseIdentifierFeatured = "FeaturedCell"
     let reuseIdentifierStandard = "StandardCell"
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
     }
     
@@ -29,21 +30,25 @@ class MoviesViewController: UIViewController, UICollectionViewDelegateFlowLayout
     
     // Collection View Methods
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
+    {
         return 50
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
         return 50
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
+                        insetForSectionAt section: Int) -> UIEdgeInsets
+    {
         return UIEdgeInsets(top: 0.0, left: 50.0, bottom: 0.0, right: 50.0)
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
         return 1
     }
     
@@ -59,7 +64,8 @@ class MoviesViewController: UIViewController, UICollectionViewDelegateFlowLayout
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         
         if (collectionView == self.collectionView1)
         {
@@ -109,7 +115,8 @@ class MoviesViewController: UIViewController, UICollectionViewDelegateFlowLayout
         return UICollectionViewCell()
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
         let playerVC = PlayerViewController()
         playerVC.playVideo()
         [self.present(playerVC, animated: true, completion: nil)]
