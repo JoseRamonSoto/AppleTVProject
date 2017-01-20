@@ -8,7 +8,8 @@
 
 import UIKit
 
-class FeaturedCollectionViewCell: UICollectionViewCell {
+class FeaturedCollectionViewCell: UICollectionViewCell
+{
     
     @IBOutlet weak var featuredImage: UIImageView!
     
@@ -32,7 +33,8 @@ class FeaturedCollectionViewCell: UICollectionViewCell {
         self.setNeedsDisplay()
     }
     
-    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
+    {
         if (self.isFocused)
         {
             self.featuredImage.adjustsImageWhenAncestorFocused = true
@@ -48,11 +50,13 @@ class FeaturedCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
     }
     
-    override func awakeFromNib() {
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
     }
     
-    override func prepareForReuse() {
+    override func prepareForReuse()
+    {
         super.prepareForReuse()
     }
     
