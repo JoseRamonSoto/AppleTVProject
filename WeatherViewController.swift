@@ -44,10 +44,13 @@ class WeatherViewController: UIViewController
     {
         for data in json["data"].arrayValue
         {
-            
+            let time = data["time"].intValue
+            let summary = data["summary"].stringValue
+            let icon = data["icon"].stringValue
+            let temperature = data["temperature"].intValue
+            let apparentTemperature = data["apparentTemperature"].intValue
         }
 
     }
 
 }
-//newDict!["currently"], ["temperature"]
