@@ -24,7 +24,7 @@ class MoviesViewController: UIViewController, UICollectionViewDelegateFlowLayout
     }
     
     override func viewDidLayoutSubviews() {
-        self.scrollView!.contentSize = CGSize(width: 1920, height: 2200)
+        //self.scrollView!.contentSize = CGSize(width: 1920, height: 2200)
     }
     
     // Collection View Methods
